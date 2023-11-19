@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img" href="foto/pavicon.jpeg">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <title>Snack Kekinian</title>
+</head>
+
+<body>
+    <!-- Navbar start-->
+    <Nav class="navbar">
+        <div class="logo">
+            <img src="foto/logo.png" alt="logo">
+            <a href="#home">Snack Kekinian.</a>
+        </div>
+        <div class="navbar-nav" id="navbar-nav">
+            <a href="#home" >Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery" >Gallery</a>
+            <a href="#registration" >Registration</a>
+            <a href="#contact" >Contact</a>
+        </div>
+
+        <div id="menu" class="menu">
+            <i data-feather="menu"></i>
+        </div>
+    </Nav>
+    <!-- navbar end -->
+
+
+
+    <!-- hero start -->
+    <section>
+        <div class="hero-section" id="home">
+            <div class="content">
+                <p>Cemilan Manis yang Dikemas Dalam Kemasan Khusus</p>
+                <p>Rasakan Sensasinya!</p>
+                
+            </div>
+
+        </div>
+    </section>
+    <!-- hero end -->
+
+
+
+    <!-- about section start-->
+    <section>
+        <div class="about" id="about">   
+            <div class="about-tittle">
+                <p>About <span>Us</span></p>
+            </div>
+            <div class="about-content">
+                    <div class="about-content1">
+                        <h5>Nikmati kelezatan tanpa batas dengan koleksi makanan ringan istimewa kami yang menawarkan citarasa yang memikat dan pengalaman yang tak terlupakan. Dibuat dengan cinta dan inovasi, setiap gigitan dari seleksi kami merupakan perpaduan sempurna antara rasa autentik, kualitas terbaik, dan kelezatan yang menggoda. Dari krispi yang renyah hingga gurih yang memikat, setiap produk kami menggabungkan bahan-bahan pilihan terbaik, diracik dengan teliti oleh ahli kami yang berdedikasi.</h5>
+                    </div>
+
+                    <div class="about-content2">
+                        
+                        <h5>Makanan ringan kami hadir untuk menghadirkan momen-momen istimewa, menjadi teman setia di setiap perjalanan, dan menemani Anda menikmati setiap detik kehidupan dengan rasa yang memuaskan. Lengkapi hari Anda dengan sensasi luar biasa dari koleksi makanan ringan kami yang tiada tanding.</h5>
+                    </div>
+            </div>
+        </div>     
+    </section>
+    <!-- about section end -->
+
+
+    <!-- gallery section start -->
+    <section>
+        <div class="gallery" id="gallery">
+            <div class="gallery-tittle">
+                <p>Our Gallery</p>
+            </div>  
+            <div class="gallery-container">
+                <div class="gallery-content1">
+                    <img src="foto/pic1.2.jpg" alt="gallery1">
+                    <p>Brownies adalah makanan manis yang terdiri dari adonan kue cokelat yang dipanggang hingga matang. Biasanya berbentuk bundar dengan tekstur renyah di luar namun lembut di dalam.Brownies ini memiliki aroma cokelat yang khas dan rasanya manis dengan rasa cokelat yang mendalam, seringkali dihiasi dengan taburan cokelat chip atau kacang-kacangan untuk memberikan tambahan cita rasa. Cocok dinikmati sebagai camilan atau hidangan penutup yang memuaskan.</p>
+                </div>
+                <div class="gallery-content2">
+                    <img src="foto/pict2.2.jpg" alt="gallery2">
+                    <p>camilan yang terbuat dari adonan tepung terigu yang digoreng hingga berwarna keemasan dan dilumuri dengan campuran gula dan kayu manis. Biasanya berbentuk panjang dan pipih dengan tekstur luar yang renyah namun bagian dalamnya lembut. Churros sering disajikan dengan saus cokelat atau karamel untuk dicelup, memberikan cita rasa manis yang khas dengan sentuhan rempah yang lezat. Cocok dinikmati sebagai camilan di siang hari atau sebagai hidangan penutup yang menggugah selera.</p>
+                </div>
+                <div class="gallery-content2">
+                    <img src="foto/pict3.1.jpg" alt="gallery3">
+                    <p>makanan manis yang terdiri dari dua keping roti almond yang ringan dan renyah di luar, dengan tekstur lembut di dalamnya. Kue ini biasanya berbentuk bulat dan diisi dengan berbagai jenis krim atau selai, memberikan variasi rasa yang kaya dan menarik. Macaron memiliki warna-warni cerah yang memikat dan sering kali disajikan dalam berbagai varian rasa seperti cokelat, stroberi, lemon, atau pandan. Hidangan ini sering dianggap sebagai makanan penutup yang elegan dan cocok dinikmati bersama dengan secangkir teh atau kopi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery section end -->
+
+
+    <!-- Registration section start -->
+    <section>
+        <div class="registration" id="registration">
+            <h1>Registration Here : </h1>
+           
+    <form action="/proses_pembelian" method="post">
+        <label for="nama_produk">Nama Produk:</label><br>
+        <input type="text" id="nama_produk" name="nama_produk"><br><br>
+
+        <label for="jumlah">Jumlah:</label><br>
+        <input type="number" id="jumlah" name="jumlah" min="1"><br><br>
+
+        <label for="harga">Harga:</label><br>
+        <input type="text" id="harga" name="harga"><br><br>
+
+        <label for="metode_pembayaran">Metode Pembayaran:</label><br>
+        <select id="metode_pembayaran" name="metode_pembayaran">
+            <option value="cash">Cash</option>
+            <option value="transfer">Transfer Bank</option>
+            <option value="kartu_kredit">Kartu Kredit</option>
+        </select><br><br>
+
+        <label for="alamat_pengiriman">Alamat Pengiriman:</label><br>
+        <textarea id="alamat_pengiriman" name="alamat_pengiriman" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+        </div>
+    </section>
+    <!-- Registration section end -->
+
+
+
+    <!-- contact section start -->
+    <section>
+        <div class="contact" id="contact">
+            <div class="contact-tittle">
+                <p>Contact Us</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-paragraf">
+                    <p>Feel free to reach out via the following channels :</p>
+               </div>
+               <div class="contact-links">
+                <a href="https://wa.me/087874930746" target="_blank" rel="noopener noreferrer">
+                  <img src="foto/icons8-whatsapp-25.png">
+                  whatsapp</a>
+        
+                
+                <a href="https://www.instagram.com/ibnuuhafidz" target="_blank" rel="noopener noreferrer">
+                  <img src="foto/icons8-instagram-25.png" alt="Instagram">
+                  Instagram
+                </a>
+
+                <a href="mailto:ibnuhafidzromdhon@gmail.com">
+                    <img src="foto/icons8-email-25.png" alt="Email">
+                    <span>Email</span>
+              </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+ 
+
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-nav">
+            <a href="#home" >Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery" >Gallery</a>
+            <a href="#registration" >Registration</a>
+            <a href="#contact" >Contact</a>
+        </div>
+
+        <div class="credit">
+            <p>copyright by:
+                <a href="">Ibnu Hafidz Romdhon</a> 
+                | © 2023.
+            </p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <script>
+        feather.replace()
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

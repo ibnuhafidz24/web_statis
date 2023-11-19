@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Oswald:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'agbalumo', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+
+
+/* navbar start */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 4%;
+    background-color: #a5a5a5 ;
+    border-bottom: 1px #ececec solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar .logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar .logo a{
+    margin-left: 2rem;
+    font-weight: 700;
+    color: #f3f3f3;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar .logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.navbar .navbar-nav a{
+    display: inline-block ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background: 2rem #8f8f8f;
+    border-radius: 20px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(131, 131, 131);
+    font-size: 0.9rem;
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid rgb(131, 131, 131);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+#menu{
+    display: none;
+}
+/* navbar end */
+
+
+
+/* hero section start */
+.hero-section{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url(foto/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section .content{
+    margin-left: 6rem;
+    width: 35%;
+}
+
+.hero-section .content p{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.hero-section .picture{
+    width: 25rem;
+    margin-right: 10rem;
+}
+/* hero section end */
+
+
+
+/* about section start*/
+.about{
+    background-image: url(foto/bekgron.jpg);
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding-top: 5rem;
+}
+
+.about .about-tittle{
+    justify-content: center;
+    color: #303030;
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+
+.about .about-tittle p{
+    font-weight: 700;
+    width: 40%;
+}
+
+.about .about-tittle span{
+    color: #ffffff;
+}
+
+.about .about-content{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-content .about-content1, 
+.about .about-content .about-content2{
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.about .about-content .about-content1 h5, 
+.about .about-content .about-content2 h5{ 
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.about .about-content .about-content1 p, 
+.about .about-content .about-content2 p{
+    font-weight: 400;
+    color: #fff;
+    width: 85%;
+}
+/* about section end */
+
+
+
+/* gallery section start */
+.gallery{
+    background-color: #eeeeee;
+    margin-top: 0;
+    padding-top: 5rem;
+    height: 80vh;
+}
+
+.gallery .gallery-tittle{
+    margin-left: 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 55%;
+    color: #777777;
+    margin-bottom: 5rem;
+}
+
+.gallery .gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+}
+
+.gallery-container .gallery-content1,
+.gallery-container .gallery-content2,
+.gallery-container .gallery-content3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: auto;
+}
+
+.gallery-container .gallery-content1 img,
+.gallery-container .gallery-content2 img,
+.gallery-container .gallery-content3 img{
+    border-radius: 20px;
+}
+
+.gallery-container .gallery-content1 p,
+.gallery-container .gallery-content2 p,
+.gallery-container .gallery-content3 p{
+    margin-top: 2rem;
+    color: #15222C;
+    text-align: center ;
+}
+/* gallery section end */
+
+
+/* registration start */
+
+.registration h1{
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+
+.registration{
+    font-family: Arial, sans-serif;
+    background-image: url(foto/Untitled\ design.jpg);
+    padding: 20px;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Form Styles */
+form {
+    max-width: 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/* Input Field Styles */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Submit Button Hover Styles */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+/* registration end */
+
+/* contact section start */
+.contact{
+    background-color: #333333;
+    min-height: 40vh;
+    margin-top: 0;
+    padding-top: 5rem;
+}
+
+.contact-tittle{
+    margin-left: 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 55%;
+    color: #858585;
+    margin-bottom: 2rem;
+}
+
+.contact-content{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 6rem;
+    margin-right: 2rem;
+    max-width: 80%;
+    color: #858585;
+    font-size: 1rem;
+}
+
+.contact-content .contact-paragraf{
+    margin-right: 5rem;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-email a{
+    text-decoration: none;
+    color: #15222C;
+    border: #f7f6f3;
+    margin-right: 5rem;
+    padding: 5px 10px 5px 10px;
+    border: solid #f8f7f5;
+    border-radius: 20px;
+    background-color: #f8f8f6;
+}
+
+.button-whatsapp a{
+    text-decoration: none;
+    border: #eeedec;
+    margin-right: 5rem;
+    color: #fcfcfc;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #faf9f6;
+    border-radius: 20px;
+}
+/* contact section end */
+
+
+
+/* footer start */
+footer{
+    background-color: #b4b4b4;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.footer-nav a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.credit p, a{
+    font-size: 12px;
+    text-decoration: none;
+}
+/* footer end */
+
+
+
+
+/* media queries */
+
+/* laptop */
+@media screen and (max-width: 1340px) {
+    html{
+        font-size: 75%;
+    }
+
+    #menu{
+        display: inline-block;
+    }
+
+    .navbar{
+        padding: 1.8rem 4%;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgb(230, 230, 230);
+        width: 30rem;
+        height: 100vh;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+        transition: 1s;
+    }
+
+    .navbar .navbar-nav a{
+        font-size: large;
+        color: #fff;
+        display: block;
+        margin: 1.4rem;
+    }
+
+    .navbar .navbar-nav a:hover{
+        color: #FFC600;
+        font-size: 1.6rem;
+    }
+
+    .navbar .navbar-nav a::after{
+        content: '';
+        display: block;
+        padding-bottom: 0.2rem;
+        border-bottom: 0.1rem solid #FFC600;
+        transform: scaleX(0);
+        transition: 0.2s linear;
+    }
+
+    .footer{
+        font-size: 75%;
+    }
+    
+    .footer-nav a{
+        font-size: 11px;
+    }
+    
+    .credit p, a{
+        font-size: 11px;
+    }
+}
+
+
+
+/* tablet */
+@media screen and (max-width: 750px) {
+    html{
+        font-size: 60%;
+    }
+
+    .hero-section{
+        display: flex;
+        min-height: 10vh;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .hero-section .content{
+        margin-left: 4rem;
+        margin-top: 10rem;
+        width: 60%;
+    }
+    
+    .hero-section .content p{
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+    
+    }
+
+    .hero-section .picture{
+        width: 25rem;
+        margin: 10rem;
+    }
+
+    .about{
+        min-height: 50vh;
+        padding-bottom: 4rem;
+    }
+
+    .about .about-tittle p{
+        width: 80%;
+    }
+    .about .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery .gallery-container{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        margin-bottom: 0;
+    }
+
+    .gallery-container .gallery-content1,
+    .gallery-container .gallery-content2,
+    .gallery-container .gallery-content3{
+        width: 80%;
+    }
+    
+    .contact{
+        background-color: #15222C;
+        min-height: 40vh;
+        margin-top: 0;
+        padding-top: 9rem;
+        }
+
+    .contact .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button{
+        margin-top: 5rem;
+    }
+    
+    .footer{
+        font-size: 60%;
+    }
+
+    .footer-nav a{
+        font-size: 8px;
+    }
+    
+    .credit p, a{
+        font-size: 8px;
+    }
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 350px) {
+    html{
+        font-size: 55%;
+    }
+}
